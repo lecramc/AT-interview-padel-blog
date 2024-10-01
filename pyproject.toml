@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "padelblog"
+version = "0.1.0"
+description = ""
+authors = ["Clement MARCEL <lecramproject@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+Django = "^5.1.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
