@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'event/css/event.css' %}">
+{% endblock %}
+{% block content %}
+<h2>Liste des événements</h2>
+<ul>
+    {% for event in events %}
+    <li>
+        <h3>{{ event.title }}</h3>
+        <p>{{ event.description }}</p>
+        <p>Début: {{ event.start_date }}</p>
+        <p>Fin: {{ event.end_date }}</p>
+        {% if event.image %}
+        <img src="{{ event.image.url }}" alt="{{ event.title }}" style="width: 200px;">
+        {% endif %}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}
