@@ -6,11 +6,11 @@ from authentication.forms import RegisterForm
 
 
 # Create your views here.
-def LoginView(request):
+def login_view(request):
     return render(request, 'index.html')
 
 
-def RegisterView(request):
+def register_view(request):
     if request.method == 'POST':
         form = RegisterForm(request.POST)
         if form.is_valid():
