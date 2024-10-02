@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/flux.css' %}">
+{% endblock %}
+{% block content %}
+
+    <h1>Bienvenue sur le flux</h1>
+   <div class="flux-container">
+    {% for article in articles %}
+        <div class="flux-article">
+            <img src="{{ article.image.url }}" alt="Image de l'article">
+            <div class="flux-article-content">
+                <h2 class="flux-article-title">
+                    <a href="{% url 'article_detail' article.id %}">{{ article.title }}</a>
+                </h2>
+                <p class="flux-article-meta">Publié le {{ article.publication_date }} par {{ article.author }}</p>
+                <p class="flux-article-excerpt">{{ article.excerpt }}</p>
+                <div class="flux-article-read-more">
+                    <a href="{% url 'article_detail' article.id %}">Lire la suite</a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+{% endblock %}
