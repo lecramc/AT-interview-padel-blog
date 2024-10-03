@@ -9,7 +9,3 @@ def flux_view(request):
     articles = Article.objects.all()
     return render(request, 'flux.html', {'articles': articles})
 
-@login_required
-def article_detail_view(request, pk):
-    article = Article.objects.get(pk=pk)
-    return render(request, 'article_detail.html', {'article': article})

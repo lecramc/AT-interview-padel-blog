@@ -6,7 +6,7 @@
             "title": "Greenweez Paris Major 2024 : Tison explique les choix de wild cards",
             "content": "Le Greenweez Paris Major 2024 a vu plusieurs décisions concernant les wild cards, avec des choix qui ont suscité quelques controverses. Benjamin Tison, impliqué dans la gestion du tournoi, explique que les wild cards sont attribuées en fonction de plusieurs critères, notamment les performances récentes des joueurs et leur potentiel à apporter de la visibilité au tournoi. Certains observateurs ont exprimé leur mécontentement, notamment concernant l'absence de certains jeunes talents français.",
             "publication_date": "2024-09-30T12:34:56Z",
-            "image": "articles/image1.jpg"
+            "image": "articles/tison.jpg"
         }
     },
     {
@@ -16,7 +16,7 @@
             "title": "GPM 2024 : Le duo BB fait vibrer le Philippe Chatrier",
             "content": "Lors du Greenweez Paris Major 2024, le duo formé par Bastien Blanqué et Johan Bergeron, surnommé 'BB', a impressionné les spectateurs du stade Philippe Chatrier. En dépit de la concurrence rude des équipes internationales, les deux joueurs français ont su relever le défi et livrer un match mémorable. Le public était en ébullition, et bien que le duo n'ait pas remporté la victoire, ils ont fait preuve de courage et de talent, confirmant leur statut de stars montantes du padel en France.",
             "publication_date": "2024-09-30T15:00:00Z",
-            "image": "articles/image2.jpg"
+            "image": "articles/bb_paire.jpg"
         }
     },
     {
@@ -26,17 +26,17 @@
             "title": "Tamara Icardo se prépare pour un grand retour avec Claudia Jensen",
             "content": "Après plusieurs mois d'absence pour cause de blessure, Tamara Icardo revient sur le circuit de padel, cette fois-ci aux côtés de sa nouvelle partenaire, Claudia Jensen. Icardo a passé de nombreuses heures à s'entraîner et à se réhabiliter pour revenir à son meilleur niveau. Avec Claudia Jensen, l'une des jeunes étoiles montantes du padel, Icardo vise à reprendre rapidement sa place parmi les meilleures joueuses du circuit international. Leur première apparition ensemble est attendue avec impatience par les fans et les experts du padel.",
             "publication_date": "2024-09-30T18:45:00Z",
-            "image": "articles/image3.jpg"
+            "image": "articles/icardo_return.webp"
         }
     },
     {
         "model": "blog.article",
         "pk": 4,
         "fields": {
-            "title": "GPM 2024 – Les graines dominent les qualifications",
+            "title": "GPM 2024 – Les têtes de série dominent les qualifications – Résultats / Programmations",
             "content": "Au Greenweez Paris Major 2024, les joueurs têtes de série ont dominé les qualifications. Malgré une forte compétition, les Français n'ont pas réussi à se qualifier, mais leur performance a été saluée par le public.",
             "publication_date": "2024-09-29T10:00:00Z",
-            "image": "articles/image4.jpg"
+            "image": "articles/tete_de_serie.webp"
         }
     },
     {
@@ -46,57 +46,37 @@
             "title": "JuanLu Esbri et Xisco Gil éliminent Leygue/Piotto",
             "content": "JuanLu Esbri et Xisco Gil ont réussi à éliminer le duo Leygue/Piotto au Greenweez Paris Major. Le match a été intense et disputé, mais Esbri et Gil ont su prendre l'avantage lors des moments cruciaux.",
             "publication_date": "2024-09-30T13:30:00Z",
-            "image": "articles/image5.jpg"
+            "image": "articles/esbri_gil.jpg"
         }
     },
     {
         "model": "blog.article",
         "pk": 6,
         "fields": {
-            "title": "Coupe du Monde 2024 : L’Espagne se passe de Garrido et Momo",
-            "content": "La Coupe du Monde de padel 2024 surprend avec la sélection espagnole, qui a décidé de ne pas inclure Garrido et Momo dans son équipe. Ce choix stratégique du capitaine Juanjo Gutiérrez a suscité de nombreux débats.",
-            "publication_date": "2024-09-28T09:00:00Z",
-            "image": "articles/image6.jpg"
+            "title": "Léa Godallier et Giorgia Marchetti impressionnent pour leur entrée en compétition",
+            "content": "Lors du Greenweez Paris Major, Léa Godallier et Giorgia Marchetti ont impressionné pour leur première apparition en compétition. Leur victoire nette laisse présager un parcours prometteur pour la suite du tournoi.",
+            "publication_date": "2024-09-30T16:00:00Z",
+            "image": "articles/godalier_marchetti.webp"
         }
     },
     {
         "model": "blog.article",
         "pk": 7,
         "fields": {
-            "title": "Léa Godallier et Giorgia Marchetti impressionnent pour leur entrée en compétition",
-            "content": "Lors du Greenweez Paris Major, Léa Godallier et Giorgia Marchetti ont impressionné pour leur première apparition en compétition. Leur victoire nette laisse présager un parcours prometteur pour la suite du tournoi.",
-            "publication_date": "2024-09-30T16:00:00Z",
-            "image": "articles/image7.jpg"
+            "title": "Le retour de Bela et Libaak dans le tournoi",
+            "content": "Belasteguin et Libaak ont fait un retour remarqué au Greenweez Paris Major 2024. Leur performance exceptionnelle dès les premiers tours du tournoi a ravi les fans de padel.",
+            "publication_date": "2024-09-29T17:30:00Z",
+            "image": "articles/bela_libaak_down.webp"
         }
     },
     {
         "model": "blog.article",
         "pk": 8,
         "fields": {
-            "title": "GPM 2024 : Victoire d’Auguste / Rubio en double mixte",
-            "content": "Dans le double mixte du Greenweez Paris Major 2024, Auguste et Rubio ont su tirer leur épingle du jeu pour remporter la victoire. Leurs adversaires ont résisté, mais n’ont pas pu tenir la cadence imposée.",
-            "publication_date": "2024-09-27T14:00:00Z",
-            "image": "articles/image8.jpg"
-        }
-    },
-    {
-        "model": "blog.article",
-        "pk": 9,
-        "fields": {
-            "title": "Le retour de Bela et Libaak dans le tournoi",
-            "content": "Belasteguin et Libaak ont fait un retour remarqué au Greenweez Paris Major 2024. Leur performance exceptionnelle dès les premiers tours du tournoi a ravi les fans de padel.",
-            "publication_date": "2024-09-29T17:30:00Z",
-            "image": "articles/image9.jpg"
-        }
-    },
-    {
-        "model": "blog.article",
-        "pk": 10,
-        "fields": {
             "title": "Thomas Leygue : émotions, défis et fierté française",
             "content": "Thomas Leygue, l'un des meilleurs espoirs français du padel, revient sur ses récents défis et exprime sa fierté de représenter la France dans les compétitions internationales. Son parcours inspire de nombreux jeunes joueurs.",
             "publication_date": "2024-09-30T11:00:00Z",
-            "image": "articles/image10.jpg"
+            "image": "articles/leygue.webp"
         }
     }
 ]

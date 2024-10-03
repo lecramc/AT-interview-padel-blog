@@ -5,19 +5,23 @@
 {% endblock %}
 
 {% block content %}
-<h2>Liste des événements</h2>
-<ul>
-    {% for event in events %}
-    <li>
-        <h3>{{ event.title }}</h3>
-        <p>{{ event.description }}</p>
-        <p>Début: {{ event.start_date }}</p>
-        <p>Fin: {{ event.end_date }}</p>
-        {% if event.image %}
-        <img src="{{ event.image.url }}" alt="{{ event.title }}" style="width: 200px;">
-        {% endif %}
-    </li>
-    {% endfor %}
-</ul>
+<div class="event-container">
+    <h2 class="event-list-title">Liste des événements</h2>
+    <ul class="event-list">
+        {% for event in events %}
+        <li class="event-item">
+            <div class="event-image">
+                <img src="{{ event.image.url }}" alt="{{ event.title }}">
+            </div>
+            <div class="event-details">
+                <h3 class="event-title">{{ event.title }}</h3>
+                <p class="event-description">{{ event.content }}</p>
+                <p class="event-date"><strong>Début:</strong> {{ event.start_date|date:"d F Y" }}</p>
+                <p class="event-date"><strong>Fin:</strong> {{ event.end_date|date:"d F Y" }}</p>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</div>
 {% endblock %}
 
