@@ -20,8 +20,8 @@
                 <a href="/"><img src="{% static 'bequeath_icon_purple.png' %}" alt="logo"></a>
             </div>
             <nav>
-                <a href="{% url 'flux' %}" class="{% if request.path == '/flux/' %}active{% endif %}">blog</a>
-                <a href="{% url 'events' %}" class="{% if request.path == '/events/' %}active{% endif %}">events</a>
+                <a href="{% url 'flux' %}" class="{% if request.path == '/flux/' %}active{% endif %}">actualités</a>
+                <a href="{% url 'events' %}" class="{% if request.path == '/events/' %}active{% endif %}">événements</a>
                 <a href="{% url 'contact' %}" class="{% if request.path == '/contact/' %}active{% endif %}">contact</a>
             </nav>
         </div>
