@@ -13,7 +13,7 @@
 
 ## Installation
 
-```git clone https://github.com/lecramc/padelBlog/```
+Se place dans le dossier dans lequel vous souhaitez que le projet soit et executer : ```git clone https://github.com/lecramc/padelBlog/```
 
 1. **Installer `pipx`** si nécessaire :
 
