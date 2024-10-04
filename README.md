@@ -38,6 +38,10 @@
     ./entrypoint-dev.sh
     ```
 
+## Accès à la documentation API
+
+La documentation de l'API est disponible à l'adresse : `http://localhost:8000/api/docs/`
+
 ## Accès à Django Admin
 
 Pour ajouter des articles ou des événements, connectez-vous à l'interface **Django Admin**.
