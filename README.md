@@ -1,4 +1,4 @@
-# Padel blog
+# Padel blog site de démonstration, test technique
 
 ## Fonctionnalités principales
 
@@ -41,12 +41,12 @@
     ```
 5. **Utilisation**
 
-Une fois l'application lancée, vous pouvez vous connecter ou vous inscrire à l'adresse suivante : `http://localhost:8000`.
-
-Se connecter avec les identifiants de test :
-
-- Nom d'utilisateur : `admin`
-- Mot de passe : `test`
+   Une fois l'application lancée, vous pouvez vous connecter ou vous inscrire à l'adresse suivante : `http://localhost:8000`.
+   
+   Se connecter avec les identifiants de test :
+   
+      - Nom d'utilisateur : `admin`
+      - Mot de passe : `test`
 
 
 ## Accès à la documentation API
@@ -61,3 +61,4 @@ Pour ajouter des articles ou des événements, connectez-vous à l'interface **D
 2. Connectez-vous avec vos identifiants d'administrateur.
 3. Ajoutez un nouvel article ou un événement dans les sections correspondantes.
 
+PS : Le fichier .env a été laissé a des fins de demonstration. Il est recommandé de créer un fichier .env personnalisé pour votre environnement.
