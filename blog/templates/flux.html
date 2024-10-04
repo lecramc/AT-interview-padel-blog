@@ -8,7 +8,7 @@
     <h1 class="flux-title">Actualités</h1>
    <div class="flux-container">
     {% for article in articles %}
-        <div class="flux-article" >
+        <a class="flux-article" href="{% url 'article' article.id %}">
             <div class="flux-article-image">
                 <img src="{{ article.image.url }}" alt="Image de l'article">
             </div>
@@ -17,11 +17,11 @@
                     <i class="icon">📝</i> Publié le {{ article.publication_date }}
                 </p>
                 <h2 class="flux-article-title">
-                    <p>{{ article.title }}</p>
+                 {{ article.title }}
                 </h2>
-                <p class="flux-article-excerpt">{{ article.excerpt }}</p>
+                <p>{{ article.content|truncatechars:250 }}</p>
             </div>
-        </div>
+        </a>
     {% endfor %}
 </div>
 

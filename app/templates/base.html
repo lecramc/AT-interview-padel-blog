@@ -23,6 +23,7 @@
                 <a href="{% url 'flux' %}" class="{% if request.path == '/flux/' %}active{% endif %}">actualités</a>
                 <a href="{% url 'events' %}" class="{% if request.path == '/events/' %}active{% endif %}">événements</a>
                 <a href="{% url 'contact' %}" class="{% if request.path == '/contact/' %}active{% endif %}">contact</a>
+                <a href="{% url 'logout' %}"><img class="logout-img" src="{% static 'logout.webp' %}" alt="logout"></a>
             </nav>
         </div>
     </div>

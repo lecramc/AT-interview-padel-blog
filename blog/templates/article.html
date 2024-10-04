@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'blog/css/article.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="article-container">
+    <div class="back-button">
+        <a href="{% url 'flux' %}" class="btn-back">Retour</a>
+    </div>
+    <div class="article-header">
+        <h1>{{ article.title }}</h1>
+        <p class="article-meta">Publié le {{ article.publication_date|date:"d F Y" }}</p>
+    </div>
+
+    <div class="article-image">
+        <img src="{{ article.image.url }}" alt="{{ article.title }}">
+    </div>
+
+    <div class="article-content">
+        <p>{{ article.content }}</p>
+    </div>
+</div>
+{% endblock %}

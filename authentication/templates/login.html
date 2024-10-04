@@ -21,7 +21,11 @@
         </div>
         <button type="submit" class="login-btn">Login</button>
     </form>
-
+    {% if form.errors %}
+        <div class="error-message">
+            <p>Nom d'utilisateur ou mot de passe incorrect. Veuillez réessayer.</p>
+        </div>
+    {% endif %}
     <p>Vous n'avez pas de compte ? <a href="{% url 'register' %}">Créez un compte</a></p>
 </div>
 

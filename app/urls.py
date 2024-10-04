@@ -16,11 +16,26 @@ Including another URLconf
 """
 from django.conf.urls.static import static
 from django.contrib import admin
-from django.shortcuts import redirect
 from django.urls import path, include
+from drf_yasg import openapi
+from drf_yasg.views import get_schema_view
+from rest_framework import permissions
+from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView, TokenVerifyView
 
 from app import settings
 from app.views import home
+
+schema_view = get_schema_view(
+    openapi.Info(
+        title="API Documentation",
+        default_version='v1',
+        description="Documentation de l'API pour l'application",
+        contact=openapi.Contact(email="lecramproject@gmail.com"),
+        license=openapi.License(name="BSD License"),
+    ),
+    public=True,
+    permission_classes=(permissions.AllowAny,),
+)
 
 urlpatterns = [
     path("", home, name="home"),
@@ -29,6 +44,15 @@ urlpatterns = [
     path('flux/', include('blog.urls')),
     path('contact/', include('contact.urls')),
     path('events/', include('event.urls')),
+
+    # api
+    path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
+    path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('api/token/verify/', TokenVerifyView.as_view(), name='token_verify'),
+
+    #doc
+    path('swagger/', schema_view.with_ui('swagger', cache_timeout=0), name='schema-swagger-ui'),
+
 ]
 
 if settings.DEBUG:
