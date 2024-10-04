@@ -37,6 +37,15 @@
     ```bash
     ./entrypoint-dev.sh
     ```
+5. **Utilisation**
+
+Une fois l'application lancée, vous pouvez vous connecter ou vous inscrire à l'adresse suivante : `http://localhost:8000`.
+
+Se connecter avec les identifiants de test :
+
+- Nom d'utilisateur : `admin`
+- Mot de passe : `test`
+
 
 ## Accès à la documentation API
 
@@ -49,8 +58,4 @@ Pour ajouter des articles ou des événements, connectez-vous à l'interface **D
 1. Ouvrez le navigateur à l'adresse : `http://localhost:8000/admin/`
 2. Connectez-vous avec vos identifiants d'administrateur.
 3. Ajoutez un nouvel article ou un événement dans les sections correspondantes.
-
-## Utilisation
-
-Une fois l'application lancée, vous pouvez vous connecter ou vous inscrire à l'adresse suivante : `http://localhost:8000`.
 
