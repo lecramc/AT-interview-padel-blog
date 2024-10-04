@@ -49,6 +49,9 @@ nav a:hover {
     color: #B2A1EA;
 }
 
+nav .logout-img {
+    width: 20px;
+}
 .content {
     flex: 1;
     height: 100%;
