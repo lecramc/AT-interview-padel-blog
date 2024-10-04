@@ -13,6 +13,8 @@
 
 ## Installation
 
+```git clone https://github.com/lecramc/padelBlog/```
+
 1. **Installer `pipx`** si nécessaire :
 
     ```bash
